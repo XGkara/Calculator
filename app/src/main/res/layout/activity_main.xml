@@ -13,21 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#000"
+        android:background="@color/purple"
         android:gravity="bottom"
         android:padding="10dp"
-        android:text="Scientific Calculator TexLog"
         android:textAlignment="viewEnd"
         android:textColor="#f6f6f6"
         android:textSize="30sp"
-        tools:ignore="RtlCompat"></TextView>
+        tools:ignore="RtlCompat"/>
 
     <TextView
         android:id="@+id/othoni1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#000"
-        android:text="Hello World!"
+        android:background="@color/grey"
         android:textColor="#fff"
         android:textSize="50sp"
         android:textAlignment="viewEnd"
@@ -63,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bac"
                         android:text="AC"
                         android:textSize="30sp"
@@ -72,8 +70,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bc"
                         android:text="C"
                         android:textSize="30sp"
@@ -82,8 +80,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bb1"
                         android:text="("
                         android:textSize="30sp"
@@ -92,8 +90,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bb2"
                         android:text=")"
                         android:textSize="30sp"
@@ -102,7 +100,7 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
+                    </androidx.appcompat.widget.AppCompatButton>
 
 
 
@@ -122,7 +120,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bsin"
                         android:text="sin"
                         android:textSize="21sp"
@@ -131,8 +129,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bcos"
                         android:text="cos"
                         android:textSize="21sp"
@@ -141,8 +139,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btan"
                         android:text="tan"
                         android:textSize="21sp"
@@ -151,27 +149,29 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/blog"
                         android:text="log"
+                        android:textAllCaps="false"
                         android:textSize="21sp"
                         android:background="@color/black"
                         android:textColor="#ffa500"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bln"
                         android:text="ln"
+                        android:textAllCaps="false"
                         android:textSize="21sp"
                         android:background="@color/black"
                         android:textColor="#ffa500"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
+                    </androidx.appcompat.widget.AppCompatButton>
 
 
 
@@ -192,27 +192,29 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bf"
                         android:text="x!"
+                        android:textAllCaps="false"
                         android:textSize="23sp"
                         android:background="@color/black"
                         android:textColor="#ffa500"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btetr"
                         android:text="x²"
+                        android:textAllCaps="false"
                         android:textSize="23sp"
                         android:background="@color/black"
                         android:textColor="#ffa500"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/briza"
                         android:text="√"
                         android:textSize="23sp"
@@ -221,8 +223,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/binv"
                         android:text="1/x"
                         android:textAllCaps="false"
@@ -232,17 +234,18 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bpi"
                         android:text="π"
+                        android:textAllCaps="false"
                         android:textSize="23sp"
                         android:background="@color/black"
                         android:textColor="#ffa500"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
+                    </androidx.appcompat.widget.AppCompatButton>
 
 
                 </LinearLayout>
@@ -260,7 +263,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b7"
                         android:text="7"
                         android:textSize="30sp"
@@ -269,8 +272,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b8"
                         android:text="8"
                         android:textSize="30sp"
@@ -279,8 +282,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b9"
                         android:text="9"
                         android:textSize="30sp"
@@ -289,8 +292,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bdiv"
                         android:text="÷"
                         android:textSize="30sp"
@@ -299,7 +302,7 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
+                    </androidx.appcompat.widget.AppCompatButton>
 
 
 
@@ -319,7 +322,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b4"
                         android:text="4"
                         android:textSize="30sp"
@@ -328,8 +331,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b5"
                         android:text="5"
                         android:textSize="30sp"
@@ -338,8 +341,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b6"
                         android:text="6"
                         android:textSize="30sp"
@@ -348,8 +351,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bepi"
                         android:text="×"
                         android:textSize="30sp"
@@ -358,7 +361,7 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
+                    </androidx.appcompat.widget.AppCompatButton>
 
 
 
@@ -378,7 +381,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b1"
                         android:text="1"
                         android:textSize="30sp"
@@ -387,8 +390,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b2"
                         android:text="2"
                         android:textSize="30sp"
@@ -397,8 +400,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b3"
                         android:text="3"
                         android:textSize="30sp"
@@ -407,8 +410,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bmion"
                         android:text="-"
                         android:textSize="30sp"
@@ -417,7 +420,7 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
+                    </androidx.appcompat.widget.AppCompatButton>
 
 
 
@@ -437,7 +440,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/bison"
                         android:text="="
                         android:textSize="30sp"
@@ -446,8 +449,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/b0"
                         android:text="0"
                         android:textSize="30sp"
@@ -456,8 +459,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btelia"
                         android:text="."
                         android:textSize="30sp"
@@ -466,8 +469,8 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
-                    <Button
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/biplus"
                         android:text="+"
                         android:textSize="30sp"
@@ -476,7 +479,7 @@
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-                    </Button>
+                    </androidx.appcompat.widget.AppCompatButton>
 
 
 
