@@ -185,5 +185,70 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        bcos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText() + "cos");
+            }
+        });
+        btan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText() + "tan");
+            }
+        });
+
+        binv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText() + "^" + "(-1)");
+            }
+        });
+        bf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int val = Integer.parseInt(othoni1.getText().toString());
+                int fact = factorial(val);
+                othoni1.setText(String.valueOf(fact));
+                othoni2.setText(val + "!");
+            }
+        });
+
+        btetr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double d = Double.parseDouble(othoni2.getText().toString());
+                double square = d * d;
+                othoni1.setText(String.valueOf(square));
+                othoni2.setText(d + "²");
+            }
+        });
+        bln.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText() + "ln");
+            }
+        });
+        blog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText() + "log");
+            }
+        });
+        bison.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String val = othoni1.getText().toString();
+                String replacedstr = val.replace('÷', '/').replace('×', '*');
+                double result = eval(replacedstr);
+                othoni1.setText(String.valueOf(result));
+                othoni2.setText(val);
+            }
+        });
     }
+    int factorial(int n)
+    {
+        return (n==1 || n==0) ? 1 : n*factorial(n-1);
+    }
+
 }
