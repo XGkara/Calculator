@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/othoni2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#000"
@@ -23,6 +24,7 @@
     </TextView>
 
     <TextView
+        android:id="@+id/othoni1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#000"
@@ -486,4 +488,4 @@
 
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>>
+</LinearLayout>
