@@ -8,8 +8,9 @@ import android.widget.TextView;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bdot,bpi,bequal,bplus,bmin,bmul,bdiv,binv,bsqrt,bsquare,bfact,bln,blog,btan,bcos,bsin,bb1,bb2,bc,bac;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,btelia,bpi,bison,bplus,bmion,bepi,bdiv,binv,briza,btetr,bf,bln,blog,btan,bcos,bsin,bb1,bb2,bc,bac;
     TextView othoni1,othoni2;
+    String pi = "3.14159265";
 
 
 
@@ -28,16 +29,16 @@ public class MainActivity extends AppCompatActivity {
         b9 = findViewById(R.id.b9);
         b0 = findViewById(R.id.b0);
         bpi = findViewById(R.id.bpi);
-        bdot = findViewById(R.id.btelia);
-        bequal = findViewById(R.id.bison);
+        btelia = findViewById(R.id.btelia);
+        bison = findViewById(R.id.bison);
         bplus = findViewById(R.id.biplus);
-        bmin = findViewById(R.id.bmion);
-        bmul = findViewById(R.id.bepi);
+        bmion = findViewById(R.id.bmion);
+        bepi = findViewById(R.id.bepi);
         bdiv = findViewById(R.id.bdiv);
         binv = findViewById(R.id.binv);
-        bsqrt = findViewById(R.id.briza);
-        bsquare = findViewById(R.id.btetr);
-        bfact = findViewById(R.id.bf);
+        briza = findViewById(R.id.briza);
+        btetr = findViewById(R.id.btetr);
+        bf = findViewById(R.id.bf);
         bln = findViewById(R.id.bln);
         blog = findViewById(R.id.blog);
         btan = findViewById(R.id.btan);
@@ -111,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 othoni1.setText(othoni1.getText()+"0");
             }
         });
-        bdot.setOnClickListener(new View.OnClickListener() {
+        btelia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 othoni1.setText(othoni1.getText()+".");
@@ -120,8 +121,69 @@ public class MainActivity extends AppCompatActivity {
         bac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                othoni1.setText(othoni1.getText()+"");
+                othoni1.setText("");
+                othoni2.setText("");
             }
         });
+        bc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String val = othoni1.getText().toString();
+                val = val.substring(0, val.length() - 1);
+                othoni1.setText(val);
+            }
+        });
+        bmion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText() + "-");
+            }
+        });
+        bepi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText()+"×");
+            }
+        });
+        bdiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText()+"÷");
+            }
+        });
+        briza.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String val = othoni1.getText().toString();
+                double r = Math.sqrt(Double.parseDouble(val));
+                othoni1.setText(String.valueOf(r));
+            }
+        });
+        bb1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText()+"(");
+            }
+        });
+        bb2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText()+")");
+            }
+        });
+        bpi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni2.setText(bpi.getText());
+                othoni1.setText(othoni1.getText()+pi);
+            }
+        });
+        bsin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText()+"sin");
+            }
+        });
+
     }
 }
