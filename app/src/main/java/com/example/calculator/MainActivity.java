@@ -133,6 +133,18 @@ public class MainActivity extends AppCompatActivity {
                 othoni1.setText(val);
             }
         });
+        bmion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText() + "-");
+            }
+        });
+        bdiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                othoni1.setText(othoni1.getText()+"÷");
+            }
+        });
 
         bplus.setOnClickListener(new View.OnClickListener() {
             @Override
