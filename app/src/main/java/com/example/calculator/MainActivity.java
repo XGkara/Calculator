@@ -134,40 +134,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        bplus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {othoni1.setText(othoni1.getText() + "+");
-            }
-        });
-
-        bmion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                othoni1.setText(othoni1.getText() + "-");
-            }
-        });
-        bepi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                othoni1.setText(othoni1.getText()+"×");
-            }
-        });
-        bdiv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                othoni1.setText(othoni1.getText()+"÷");
-            }
-        });
-        briza.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String val = othoni1.getText().toString();
-                double r = Math.sqrt(Double.parseDouble(val));
-                othoni1.setText(String.valueOf(r));
-                othoni2.setText("√" + val);
-            }
-        });
+        
         bb1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
