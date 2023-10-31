@@ -211,6 +211,17 @@ public class MainActivity extends AppCompatActivity {
                 othoni1.setText(othoni1.getText() + "log");
             }
         });
+
+        briza.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String val = othoni1.getText().toString();
+                double r = Math.sqrt(Double.parseDouble(val));
+                othoni1.setText(String.valueOf(r));
+                othoni2.setText("√" + val);
+            }
+        });
+
         bison.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
